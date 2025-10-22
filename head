@@ -1,0 +1,17 @@
+[33mcommit 689d2d791487fe1a6367ad8042cbf8a46146cd6d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: dannytones <danylotones@example.com>
+Date:   Tue Oct 21 09:10:38 2025 +0300
+
+    Initial commit of the Next.js project structure
+
+[33mcommit f742b89d3a53912c3b24ab631fef9eeec2d3a897[m
+Author: dannytones <danylotones@example.com>
+Date:   Mon Oct 20 14:29:27 2025 +0300
+
+    Fix: correct casing for Spotlight component file
+
+[33mcommit ff4ffec088928d38f1389eec664712a5921633f3[m
+Author: dannytones <danylotones@example.com>
+Date:   Sun Oct 19 17:26:21 2025 +0300
+
+    Initial commit from Create Next App
