@@ -1,15 +1,22 @@
+import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
-import { ThemeSwitcher } from "@/components/ThemeSwitcher";
+import { FloatingNav } from "@/components/ui/FloatingNav";
+import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
 import Image from "next/image";
+import { FaHome } from "react-icons/fa";
 
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full">
         <div className="absolute top-5 right-5 z-20">
-          <ThemeSwitcher /> {/* 👈 Компонент для тестування */}
+          {/* <ThemeSwitcher /> 👈 Компонент для тестування */}
         </div>
+        <FloatingNav
+          navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
+        />
         <Hero />
+        <Grid />
       </div>
     </main>
   );
