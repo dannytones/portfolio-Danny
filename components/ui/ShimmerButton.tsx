@@ -5,6 +5,8 @@ interface ShimmerButtonProps
   className?: string;
   icon: React.ReactNode;
   position: string;
+  otherClasses?: string;
+  handleClick?: () => void;
 }
 
 export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
@@ -12,6 +14,8 @@ export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
   icon,
   children,
   className,
+  otherClasses,
+  handleClick,
   ...props
 }) => {
   return (
@@ -25,6 +29,7 @@ export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
         focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 gap-2
         ${className || ""}
       `}
+      onClick={handleClick}
       {...props}
     >
       {position === "left" && icon}

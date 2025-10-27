@@ -1,7 +1,9 @@
 import Grid from "@/components/Grid";
 import Hero from "@/components/Hero";
+import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { ThemeSwitcher } from "@/components/ui/ThemeSwitcher";
+import { navItems } from "@/data";
 import Image from "next/image";
 import { FaHome } from "react-icons/fa";
 
@@ -12,11 +14,10 @@ export default function Home() {
         <div className="absolute top-5 right-5 z-20">
           {/* <ThemeSwitcher /> 👈 Компонент для тестування */}
         </div>
-        <FloatingNav
-          navItems={[{ name: "Home", link: "/", icon: <FaHome /> }]}
-        />
+        <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
+        <RecentProjects />
       </div>
     </main>
   );

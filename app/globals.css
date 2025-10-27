@@ -57,6 +57,9 @@ body {
   .animate-shimmer {
     animation: shimmer 4s linear infinite;
   }
+  .heading {
+    @apply font-bold text-4xl md:text-5xl text-center;
+  }
 }
 
 @import "tailwindcss";
