@@ -68,8 +68,7 @@ const Hero: React.FC = () => {
       >
         <ShimmerButton icon={<FaLocationArrow />} position="right">
           About me
-        </ShimmerButton>{" "}
-        /
+        </ShimmerButton>
       </a>
     </div>
   );
