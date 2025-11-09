@@ -48,7 +48,7 @@ const Hero = () => {
       </div>
       <a href="#about" className="flex justify-center">
         <ShimmerButton icon={<FaLocationArrow />} position="right">
-          Про мене!
+          About me
         </ShimmerButton>
       </a>
     </div>
