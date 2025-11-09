@@ -7,9 +7,11 @@ interface ShimmerButtonProps
   position: string;
   otherClasses?: string;
   handleClick?: () => void;
+  title?: string;
 }
 
 export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
+  title,
   position,
   icon,
   children,

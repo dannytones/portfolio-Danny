@@ -6,7 +6,7 @@ const Clients = () => {
   return (
     <div className="py-20" id="testimonials">
       <h1 className="heading">
-        Words from <span className="text-purple-200">satisfied clients</span>
+        Words from <span className="text-[#00C9B4]">satisfied clients</span>
       </h1>
       <div className="flex flex-wrap items-center max-lg:mt-10 ">
         <InfiniteMovingCards
