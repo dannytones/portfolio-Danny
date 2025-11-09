@@ -7,9 +7,11 @@ interface ShimmerButtonProps
   position: string;
   otherClasses?: string;
   handleClick?: () => void;
+  title?: string;
 }
 
 export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
+  title,
   position,
   icon,
   children,
@@ -22,10 +24,10 @@ export const ShimmerButton: React.FC<ShimmerButtonProps> = ({
     <button
       className={`
         relative z-20 inline-flex h-12 animate-shimmer items-center justify-center 
-        rounded-md border border-slate-800 
-        bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] 
-        bg-[length:200%_100%] px-10 font-medium text-slate-400 
-        transition-all duration-250 ease-out focus:outline-none hover:ring-2
+        rounded-md border border-[#60327a] 
+        bg-[linear-gradient(110deg,#1B032B,45%,#00c9b4,55%,#1B032B)] 
+        bg-[length:200%_100%] px-10 font-medium text-[#FFE8FF] 
+        transition-all duration-300 ease-out focus:outline-none hover:ring-2
         focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 gap-2
         ${className || ""}
       `}

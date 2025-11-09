@@ -1,5 +1,5 @@
 @import "tailwindcss";
-
+/* color pallete https://coolors.co/1e022e-2e0249-60327a-ffe8ff-00c9b4-15e2ce */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -7,7 +7,7 @@
 
 @theme {
   --color-black: #000;
-  --color-black-100: #000319;
+  --color-black-100: #160024;
 }
 
 @theme inline {
@@ -31,7 +31,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0d1b2a;
     --foreground: #ededed;
   }
 }
@@ -51,8 +51,6 @@ body {
   }
 }
 
-/* 2. Визначення утиліти @animation для Tailwind */
-/* Це дозволяє вам використовувати клас 'animate-shimmer' у вашому HTML/JSX */
 @layer utilities {
   .animate-shimmer {
     animation: shimmer 4s linear infinite;
